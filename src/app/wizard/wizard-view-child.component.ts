@@ -16,14 +16,14 @@ export class WizardViewChildComponent implements AfterViewInit {
   constructor() {
     // View hasn't been created yet, so the stepChild is undefined
     console.log('------------ Constructor ------------');
-    console.log('stepOne component', this.stepChild);
-    console.log('stepTwo ref', this.stepTwoChild);
+    console.log('stepOne', this.stepChild);
+    console.log('stepTwo', this.stepTwoChild);
   }
 
   ngAfterViewInit() {
     // Runs after the view is ready, so the stepChild will be defined
     console.log('------------ NgAfterViewInit ------------');
-    console.log('stepOne component', this.stepChild);
-    console.log('stepTwo ref', this.stepTwoChild);
+    console.log('stepOne', this.stepChild);
+    console.log('stepTwo', this.stepTwoChild);
   }
 }
